@@ -378,7 +378,7 @@ public class TelaAgenda extends javax.swing.JFrame {
   }//GEN-LAST:event_mnuMetalActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-      TelaLogin telaLogin = new TelaLogin(this,true);
+      TelaLogin telaLogin = new TelaLogin(this,true);//Efeito modal
       telaLogin.setVisible( true );
       
       lblUsuario.setText( telaLogin.getUsuario() );
