@@ -156,7 +156,7 @@ public class TelaLogin extends javax.swing.JDialog {
       EntityManagerFactory factory = Persistence.createEntityManagerFactory( "AgendaDeContatosPU" );
       EntityManager manager = factory.createEntityManager();
 
-      Query query = manager.createNamedQuery( "Usuarios.findByUsuarioAndSenha" );
+      Query query = manager.createNamedQuery( "Usuarios.findByUsuarioESenha" );
       query.setParameter( "usuario", txtUsuario.getText() );
       query.setParameter( "senha", txtSenha.getText() );
 
